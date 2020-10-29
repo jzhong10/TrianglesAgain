@@ -4,6 +4,7 @@ public class Tester {
       Point p2 = new Point(-100, 23);
       Point p3 = new Point(0, 3);
       Point p4 = new Point(0, 0);
+
       System.out.println(p1.getX());
       System.out.println(p1.getY());
       System.out.println(p2.getX());
@@ -15,5 +16,17 @@ public class Tester {
       System.out.println(p3.distanceTo(p1)); // 5
       System.out.println(p1.distanceTo(p4)); // 4
       System.out.println(p1.distanceTo(p1)); // 0
+
+      System.out.println();
+
+      System.out.println(p1.equals(p1)); // T
+      System.out.println(p1.equals(p2)); // F
+      System.out.println(p1.equals(p4)); // F
+      for (int i = 0; i < 5; i++) {
+        Point pt1 = new Point(i, 0);
+        Point pt2 = new Point(i, 0);
+        System.out.println(pt1.equals(pt2)); // TTTTTTTTT
+      }
+
     }
 }
