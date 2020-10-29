@@ -26,7 +26,7 @@ public class Triangle {
     }
 
     public static double roundtenthousandths(double x) {
-  		return Math.round(100000 * x) / 100000.0;
+  		return Math.round(10000 * x) / 10000.0;
   	}
 
     public String classify() {
