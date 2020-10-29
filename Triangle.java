@@ -25,4 +25,28 @@ public class Triangle {
       return Math.sqrt(s * (s - d12) * (s - d13) * (s - d23) );
     }
 
+    public static double roundtenthousandths(double x) {
+  		return Math.round(100000 * x) / 100000.0;
+  	}
+
+    public String classify() {
+      double d12 = roundtenthousandths(v1.distanceTo(v2));
+      double d13 = roundtenthousandths(v1.distanceTo(v3));
+      double d23 = roundtenthousandths(v2.distanceTo(v3));
+      int count = 0;
+      if (d12 == d13) {
+        count++;
+      }
+
+      if (d12 == d23) {
+        count++;
+      }
+
+      if (d13 == d23) {
+        count++;
+      }
+      String[] types = {"scalene", "isosceles", "", "equilateral"};
+      return types[count];
+      // I just wanted to try another way to do this
+    }
 }

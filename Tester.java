@@ -35,5 +35,23 @@ public class Tester {
       System.out.println(t2.getPerimeter()); //20 + 10sqrt2 ~ 34.14
       System.out.println(t1.getArea()); // 6
       System.out.println(t2.getArea()); // 50
+
+      System.out.println();
+      System.out.println(t1.classify());
+      System.out.println();
+      // all isoscles
+      for (int i = 0; i < 5; i++) {
+        Triangle a = new Triangle(0, 0, 2, 0, 1, i);
+        System.out.println(a.classify());
+      }
+
+      System.out.println();
+
+      // all equilateral
+      for (int i = 0; i < 10; i++) {
+        double x = Math.random()*100;
+        Triangle a = new Triangle(0, 0, x, 0, x/2, (x/2)*Math.sqrt(3));
+        System.out.println(a.classify());
+      }
     }
 }
