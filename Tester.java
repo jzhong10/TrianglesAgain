@@ -33,6 +33,7 @@ public class Tester {
 
       System.out.println(t1.getPerimeter()); // 12
       System.out.println(t2.getPerimeter()); //20 + 10sqrt2 ~ 34.14
+      System.out.println(Triangle.roundtenthousandths(t2.getPerimeter()));
       System.out.println(t1.getArea()); // 6
       System.out.println(t2.getArea()); // 50
 
@@ -53,5 +54,9 @@ public class Tester {
         Triangle a = new Triangle(0, 0, x, 0, x/2, (x/2)*Math.sqrt(3));
         System.out.println(a.classify());
       }
+
+      System.out.println();
+      System.out.println(t1);
+      System.out.println(t2);
     }
 }
