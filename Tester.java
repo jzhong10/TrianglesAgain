@@ -33,5 +33,7 @@ public class Tester {
 
       System.out.println(t1.getPerimeter()); // 12
       System.out.println(t2.getPerimeter()); //20 + 10sqrt2 ~ 34.14
+      System.out.println(t1.getArea()); // 6
+      System.out.println(t2.getArea()); // 50
     }
 }
