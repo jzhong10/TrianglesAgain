@@ -28,5 +28,10 @@ public class Tester {
         System.out.println(pt1.equals(pt2)); // TTTTTTTTT
       }
 
+      Triangle t1 = new Triangle(p1, p3, p4);
+      Triangle t2 = new Triangle(0, 0, 10, 0, 0, 10);
+
+      System.out.println(t1.getPerimeter()); // 12
+      System.out.println(t2.getPerimeter()); //20 + 10sqrt2 ~ 34.14
     }
 }
