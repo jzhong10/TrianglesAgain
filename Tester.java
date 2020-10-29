@@ -56,7 +56,27 @@ public class Tester {
       }
 
       System.out.println();
+
       System.out.println(t1);
       System.out.println(t2);
+
+      System.out.println();
+
+      System.out.println(t1);
+      Point rpt = new Point(100, 42);
+      t1.setVertex(2, rpt);
+      System.out.println(t1);
+      t1.setVertex(2, new Point(0, 0));
+      System.out.println(t1);
+
+      System.out.println();
+
+      System.out.println(t2);
+      Point rpt2 = new Point(-234, 248);
+      t2.setVertex(2, rpt2);
+      System.out.println(t2);
+      t2.setVertex(1, new Point(7128, 2412.2134));
+      System.out.println(t2);
+
     }
 }
